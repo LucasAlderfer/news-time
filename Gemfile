@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rspec-rails'
 gem 'figaro'
 gem 'capybara'
+gem 'simplecov'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -38,6 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
+  gem 'shoulda-matchers'
 end
 
 group :development do
