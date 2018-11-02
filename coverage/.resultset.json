@@ -5,14 +5,29 @@
         1,
         null
       ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/models/user.rb": [
+      "/Users/lucasdevelopment/turing/4module/news-time/app/models/favorite.rb": [
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/lucasdevelopment/turing/4module/news-time/app/models/application_record.rb": [
         1,
+        1,
+        null
+      ],
+      "/Users/lucasdevelopment/turing/4module/news-time/app/models/user.rb": [
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -29,30 +44,8 @@
         1,
         1,
         null
-      ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/channels/application_cable/channel.rb": [
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1541108503
+    "timestamp": 1541170272
   }
 }
