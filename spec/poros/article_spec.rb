@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe Article do
   it 'exists' do
-    array = ['Watson', 'ibm', 'IBM', 'smart thing', 'a smart thing', 'this.is.a.url', 'an.image.url', '1234-1234-date']
+    array = ['Watson', 'ibm', 'IBM', 'smart thing', 'a smart thing', 'this.is.a.url', 'an.image.url', DateTime.new]
     article = Article.new(array)
     expect(article.author).to eq('Watson')
     expect(article.source_id).to eq('ibm')
@@ -11,6 +11,6 @@ describe Article do
     expect(article.description).to eq('a smart thing')
     expect(article.url).to eq('this.is.a.url')
     expect(article.urltoimage).to eq('an.image.url')
-    expect(article.published_at).to eq('1234-1234-date')
+    expect(article.published_at).to eq(DateTime.new)
   end
 end
