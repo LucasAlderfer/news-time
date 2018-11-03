@@ -1,0 +1,26 @@
+main {
+  margin-top: 25vh;
+  margin-left: 25vw;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.article h5 {
+  margin: 0;
+}
+
+.article img {
+  height: 150px;
+  width: 200px;
+}
+
+.article-info {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}

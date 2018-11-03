@@ -1,10 +1,22 @@
 class NewsArticleService
 
   def default
+    display_array = []
     articles = get_default['articles']
     articles.each do |article|
       author = article['author']
+      source_id = article['source']['id']
+      source_name = article['source']['name']
+      title = article['title']
+      description = article['description']
+      url = article['url']
+      urltoimage = article['urlToImage']
+      published_at = article['publishedAt']
+      article_array = [author, source_id, source_name, title, description, url, urltoimage, published_at]
+      new_article = Article.new(article_array)
+      display_array << new_article
     end
+    display_array
   end
 
   private
@@ -18,7 +30,7 @@ class NewsArticleService
   end
 
   def get_default
-    request("/v2/top-headlines?apiKey=#{ENV['NEWS_API_KEY']}")
+    request("/v2/top-headlines?country=us&apiKey=#{ENV['NEWS_API_KEY']}")
   end
 
 end

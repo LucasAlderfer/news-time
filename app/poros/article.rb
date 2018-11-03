@@ -16,6 +16,6 @@ class Article
     @description = array[4]
     @url = array[5]
     @urltoimage = array[6]
-    @published_at = array[7]
+    @published_at = array[7].to_datetime
   end
 end
