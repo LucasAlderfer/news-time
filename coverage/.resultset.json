@@ -31,11 +31,72 @@
         1,
         null
       ],
-      "/Users/lucasdevelopment/turing/4module/news-time/app/controllers/welcome_controller.rb": [
+      "/Users/lucasdevelopment/turing/4module/news-time/app/poros/article.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        41,
+        41,
+        41,
+        41,
+        41,
+        41,
+        41,
+        41,
+        null,
+        null
+      ],
+      "/Users/lucasdevelopment/turing/4module/news-time/app/services/news_article_service.rb": [
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
         null,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/lucasdevelopment/turing/4module/news-time/app/controllers/news_controller.rb": [
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null
@@ -44,8 +105,17 @@
         1,
         1,
         null
+      ],
+      "/Users/lucasdevelopment/turing/4module/news-time/app/controllers/welcome_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1541170272
+    "timestamp": 1541289451
   }
 }

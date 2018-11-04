@@ -1,0 +1,15 @@
+<main>
+  <% @articles.each do |article| %>
+    <div class="article">
+      <div class="article-image">
+        <a href=<%= article.url %>><img src=<%= article.urltoimage %>></a>
+      </div>
+      <div class="article-info">
+        <a href=<%= article.url %>><h3><%= article.title %></h3></a>
+        <h5>Author: <%= article.author %></h5>
+        <h5>From: <%= article.source_name %> </h5>
+        <h5 class="article-time">At: <%= article.published_at.strftime("%A, %d %b %Y %l:%M %p") %></h5>
+      </div>
+    </div>
+  <% end %>
+</main>
