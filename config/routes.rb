@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get '/news', to: 'news#index'
   get '/auth/google_oauth2/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
+
+  resources :favorites, only: [:create]
 end

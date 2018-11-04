@@ -2,7 +2,6 @@ require 'rails_helper'
 
 describe Favorite, type: :model do
   context 'validations' do
-    it { should validate_presence_of(:author) }
     it { should validate_presence_of(:source_id) }
     it { should validate_presence_of(:source_name) }
     it { should validate_presence_of(:title) }

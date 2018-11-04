@@ -8,6 +8,7 @@
       </div>
       <div class="article-info">
         <a href=<%= article.url %>><h3><%= article.title %></h3></a>
+        <%= link_to "Add to Favorites", favorites_path(article: article.to_json), method: :post %>
         <h5>Author: <%= article.author %></h5>
         <h5>From: <%= article.source_name %> </h5>
         <h5 class="article-time">At: <%= article.published_at.strftime("%A, %d %b %Y %l:%M %p") %></h5>
