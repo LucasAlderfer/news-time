@@ -1,0 +1,4 @@
+<% if current_user %>
+  <h3>Welcome <%= current_user.name %></h3>
+  <h3><%= link_to "Logout", "/logout" %></h3>
+<% end %>
