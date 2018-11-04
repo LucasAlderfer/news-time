@@ -28,6 +28,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'capybara'
 gem 'simplecov'
+gem 'omniauth-google-oauth2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
 end
 
 group :development do
