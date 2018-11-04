@@ -1,8 +1,8 @@
 class NewsArticleService
 
-  def default
+  def default(params = "&country=us")
     display_array = []
-    articles = get_default['articles']
+    articles = get_default(params)['articles']
     articles.each do |article|
       author = article['author']
       source_id = article['source']['id']
@@ -29,8 +29,8 @@ class NewsArticleService
     JSON.parse(conn.get(url).body)
   end
 
-  def get_default
-    request("/v2/top-headlines?country=us&apiKey=#{ENV['NEWS_API_KEY']}")
+  def get_default(params = "&country=us")
+    request("/v2/top-headlines?apiKey=#{ENV['NEWS_API_KEY']}" + params)
   end
 
 end
