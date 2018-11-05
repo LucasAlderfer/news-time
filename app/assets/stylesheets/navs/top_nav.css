@@ -1,0 +1,12 @@
+.top-nav {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-nav h3 {
+  width: 10vw;
+}
