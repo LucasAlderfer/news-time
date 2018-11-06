@@ -1,0 +1,16 @@
+body {
+  font-family: 'Ramaraja', serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  color: #2f2f2f;
+  background-color: #f9f7f1;
+}
+
+.welcome {
+  width: 20vw;
+  margin-left: 40vw;
+  text-align: center;
+  margin-top: 25vh;
+  border: 3px double #2f2f2f;
+}
