@@ -1,21 +1,21 @@
-<div class="source-search">
-  <% sources=[{name:"ABC", id:'abc-news'}, {name:"Ars Technica", id:'ars-technica'}, {name:"Associated Press", id:'associated-press'}, {name:"BBC", id:'bbc-news'}, {name:"Bleacher Report", id:'bleacher-report'}, {name:"Bloomberg", id:'bloomberg'}, {name:"Business Insider", id:'business-insider'}, {name:"BussFeed", id:'buzzfeed'}, {name:"CBS", id:'cbs-news'}, {name:"CNBC", id:'cnbc'}, {name:"CNN", id:'cnn'}, {name:"Engadget", id:'engadget'}, {name:"ESPN", id:'espn'}, {name:"Fox News", id:'fox-news'}, {name:"Fox Sports", id:'fox-sports'}, {name:"Google News", id:'google-news'}, {name:"IGN", id:'ign'}, {name:"MSNBC", id:'msnbc'}, {name:"MTV", id:'mtv-news'}, {name:"National Geographic", id:'national-geographic'}, {name:"NBC", id:'nbc-news'}, {name:"New York Magazine", id:'new-york-magazine'}, {name:"Politico", id:'politico'}, {name:"The Economist", id:'the-economist'}, {name:"The Huffington Post", id:'the-huffington-post'}, {name:"The New York Times", id:'the-new-york-times'}, {name:"The Wall Street Journal", id:'the-wall-street-journal'}, {name:"The Washington Post", id:'the-washington-post'}, {name:"Time", id:'time'}, {name:"USA Today", id:'usa-today'}] %>
-  <%= form_tag("/news", method: "get") do %>
-    <%= select_tag "sources", options_for_select(sources.map { |source| [source[:name], source[:id]] }) %>
-    <%= submit_tag("Update Articles") %>
-  <% end %>
-</div>
-<div class="category-search">
-  <% categories=[{name:"Business", id:'business'}, {name:"Entertainment", id:'entertainment'}, {name:"General", id:"general"}, {name:"Health", id:'health'}, {name:"Science", id:'science'}, {name:"Sports", id:'sports'}, {name:"Technology", id:'technology'}] %>
-  <%= form_tag("/news", method: "get") do %>
-    <%= select_tag "category", options_for_select(categories.map { |category| [category[:name], category[:id]] }) %>
-    <%= submit_tag("Update Articles") %>
-  <% end %>
-</div>
-<div class="keyword-search">
-  <%= form_tag("/news", method: "get") do %>
-    <%= label_tag(:q, "Search for:") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search for Articles") %>
-  <% end %>
+<div class="search-nav">
+  <div class="source-search">
+    <% sources=[{name:"ABC", id:'abc-news'}, {name:"Ars Technica", id:'ars-technica'}, {name:"Associated Press", id:'associated-press'}, {name:"BBC", id:'bbc-news'}, {name:"Bleacher Report", id:'bleacher-report'}, {name:"Bloomberg", id:'bloomberg'}, {name:"Business Insider", id:'business-insider'}, {name:"BussFeed", id:'buzzfeed'}, {name:"CBS", id:'cbs-news'}, {name:"CNBC", id:'cnbc'}, {name:"CNN", id:'cnn'}, {name:"Engadget", id:'engadget'}, {name:"ESPN", id:'espn'}, {name:"Fox News", id:'fox-news'}, {name:"Fox Sports", id:'fox-sports'}, {name:"Google News", id:'google-news'}, {name:"IGN", id:'ign'}, {name:"MSNBC", id:'msnbc'}, {name:"MTV", id:'mtv-news'}, {name:"National Geographic", id:'national-geographic'}, {name:"NBC", id:'nbc-news'}, {name:"New York Magazine", id:'new-york-magazine'}, {name:"Politico", id:'politico'}, {name:"The Economist", id:'the-economist'}, {name:"The Huffington Post", id:'the-huffington-post'}, {name:"The New York Times", id:'the-new-york-times'}, {name:"The Wall Street Journal", id:'the-wall-street-journal'}, {name:"The Washington Post", id:'the-washington-post'}, {name:"Time", id:'time'}, {name:"USA Today", id:'usa-today'}] %>
+    <% categories=[{name:"Business", id:'business'}, {name:"Entertainment", id:'entertainment'}, {name:"General", id:"general"}, {name:"Health", id:'health'}, {name:"Science", id:'science'}, {name:"Sports", id:'sports'}, {name:"Technology", id:'technology'}] %>
+    <%= form_tag("/news", method: "get") do %>
+      <div class="search-param" id="update-source">
+        <%= label_tag("Update Source: ") %>
+        <%= select_tag "sources", options_for_select(sources.map { |source| [source[:name], source[:id]] }), :prompt => "Please select to specify source" %>
+      </div>
+      <div class="search-param" id="update-category">
+        <%= label_tag("Update Category: ") %>
+        <%= select_tag "category", options_for_select(categories.map { |category| [category[:name], category[:id]] }), :prompt => "Please select to specify category" %>
+      </div>
+      <div class="search-param" id="update-keyword">
+        <%= label_tag(:q, "Search for:") %>
+        <%= text_field_tag(:q) %>
+      </div>
+      <%= submit_tag("Update Articles") %>
+    <% end %>
+  </div>
 </div>

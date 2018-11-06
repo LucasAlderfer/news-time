@@ -1,4 +1,10 @@
-<% if current_user %>
-  <h3>Welcome <%= current_user.name %></h3>
-  <h3><%= link_to "Logout", "/logout" %></h3>
-<% end %>
+<div class="top-nav">
+  <div class="home-link">
+    <h1><%= link_to "News Time!", '/news' %></h1>
+  </div>
+  <% if current_user %>
+    <h3>Welcome <%= current_user.name %></h3>
+    <h3><%= link_to "Logout", "/logout" %></h3>
+    <h3><%= link_to "My Favorites", "/favorites" %></h3>
+  <% end %>
+</div>

@@ -1,7 +1,5 @@
 class Favorite < ApplicationRecord
-  validates_presence_of :author,
-                        :source_id,
-                        :source_name,
+  validates_presence_of :source_name,
                         :title,
                         :description,
                         :url,
