@@ -1,12 +1,27 @@
 .top-nav {
-  height: 20vh;
-  width: 100vw;
+  height: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 3px double #2f2f2f;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
 }
 
 .top-nav h3 {
-  width: 10vw;
+  margin-right: 10vw;
+  font-family: 'Ramaraja', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.top-nav h1 {
+  font-family: 'Ramaraja', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0;
 }
